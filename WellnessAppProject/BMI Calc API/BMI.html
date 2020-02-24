@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <style type="text/css">
+        #bmi-calculator {
+            border: 1px solid;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            width: 29em;
+            padding: 1em;
+            ;
+        }
+
+        #bmi-calculator .field label {
+            width: 3em;
+        }
+
+        #bmiresult {
+            width: 4em;
+            height: 2em;
+            line-height: 2em;
+            float: left;
+            position: relative;
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            function showbmi() {
+                var weight = $("input#weight").val();
+                var height = $("input#height").val();
+                var bmi = "?";
+
+                if (weight && height) {
+                    bmi = Math.round(10 * weight / Math.pow(height / 100, 2)) / 10;
+                    if (isNaN(bmi)) bmi = "?";
+                }
+
+                $("#bmiresult").text(bmi);
+                return bmi;
+            }
+
+            $("form#bmi input").bind("keydown", function () {
+                setTimeout(function () {
+                    showbmi();
+                }, 100);
+                return true;
+            });
+
+            $("form#bmi input").bind("change", function () {
+                showbmi();
+            });
+
+            $("form#bmi").bind("submit", function () {
+                showbmi();
+                return false;
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <h2>BMI 試算</h2>
+    <div id="bmi-calculator">
+        <div id="bmiresult">?</div>
+        <form id="bmi" action="#">
+            <div>
+                <div class="field">
+                    <label>身高</label>
+                    <input id="height" name="height" size="30" type="text" value="" autocomplete="off"> cm
+                </div>
+                <div class="field">
+                    <label>體重</label>
+                    <input id="weight" name="weight" size="30" type="text" value="" autocomplete="off"> kg
+                </div>
+                <div class="submit"><input class="submit" type="submit" value="計算"></div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

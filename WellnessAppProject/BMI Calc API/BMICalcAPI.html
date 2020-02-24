@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="BMICalcAPI.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="nav-container">
+        <img class="nav-logo" src="assets/img/logo.svg" />
+        <div class="nav-link-container">
+            <a href="#section-a">
+                <li class="nav-link-item">Home</li>
+            </a>
+            <a href="#section-b">
+                <li class="nav-link-item">About</li>
+            </a>
+            <a href="#section-c">
+                <li class="nav-link-item">Calculate</li>
+            </a>
+            <a href="#section-d">
+                <li class="nav-link-item">Results</li>
+            </a>
+            <a href="#footer">
+                <li class="nav-link-item">Contact</li>
+            </a>
+        </div>
+        <img class="nav-hamburger" src="assets/icon/hamburger-icon.svg" />
+    </nav>
+
+    <section id="section-a" class="section">
+        <div class="section-a-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <img src="assets/img/people-welcome.svg" />
+                    </div>
+                    <div class="description col-xs-12 col-sm-6">
+                        <h2>The best online tool to calculate your body mass index</h2>
+                        <a href="#section-c"><button>Calculate it now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-b" class="section">
+        <div class="box-container container">
+            <div class="row">
+                <div class="box box-a col-xs-12 col-sm-4">
+                    <img src="assets/icon/diamond-icon.svg" />
+                    <h4>Quetlet Calculator</h4>
+                    <p>The best online available tool to calculate your body mass index</p>
+                </div>
+                <div class="box box-b col-xs-12 col-sm-4">
+                    <img src="assets/icon/star-icon.svg" />
+                    <h4>Simple to use</h4>
+                    <p>Inserting your height and weight, you can know imediately if you're underweight, normal weight,
+                        overwheight, or obese</p>
+                </div>
+                <div class="box box-c col-xs-12 col-sm-4">
+                    <img src="assets/icon/health-icon.svg" />
+                    <h4>Improve your health</h4>
+                    <p>Get diverse tips to improve your health getting into your ideal weight carefully</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-c" class="section">
+        <div class="start-container">
+            <h2>Let's start</h2>
+            <p>Insert your height and weight into the inputs below and press finish to get your results</p>
+        </div>
+
+        <div class="height-container">
+            <label>Height</label><br />
+            <input type="text" name="height" required />
+            <p>* insert a legit number</p>
+        </div>
+
+        <div class="weight-container">
+            <label>Weight</label><br />
+            <input type="text" name="weight" required />
+            <p>* insert a legit number</p>
+        </div>
+        <button>Finish</button>
+    </section>
+
+    <section id="section-d" class="section">
+        <h2 id="results-title">Normal Weight</h2>
+    </section>
+
+    <footer id="footer" class="section">
+        <p>website made by <a href="https://github.com/alencarfff">Felipe Alencar</a></p>
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
