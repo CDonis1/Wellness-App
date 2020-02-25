@@ -1,0 +1,204 @@
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-container {
+    background-color: #1AE14C;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 50px;
+}
+
+.nav-logo {
+    width: 100px;
+    display: inline;
+    transform: translateY(50%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-hamburger{
+    display: none;
+}
+
+.nav-link-container {
+    display: inline-block;
+    width: 50%;
+    float: right;
+}
+
+.nav-link-item {
+    list-style: none;
+}
+
+.nav-link-item{
+    display: inline-block;
+    padding: 22px;
+    font-family: Arial;
+    font-weight: lighter;
+    color: #353535;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-link-item:hover {
+    transform: translateY(-3px);
+}
+
+.nav-container,
+section {
+    padding: 0 50px;
+}
+
+section {
+    padding: 10vw 0;
+}
+
+#section-a {
+    background-color: #fafafa;    
+    font-family: Tahoma;
+}
+
+.section-a-content {
+    padding: 40px 0;
+}
+
+#section-a .section-a-content  h2 {
+    color: #353535;
+    font-size: 40px;
+}
+
+#section-a .description {
+    padding: 80px 0;
+    text-align: left;
+}
+
+#section-a a button {
+    color: #333;
+    margin-top: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    /*background-color: #ffc33c;    */
+    background-color: lightpurple;    
+    padding: 12.5px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 1px 1px 20px #333;
+}
+
+#section-b {
+    text-align: center;
+    background-color: lightpurple
+    ;    
+}
+
+#section-b .box-container .box {
+    font-size: 120%;
+    border: 5px dashed #528;
+    text-align: center;
+    width: 31%;
+    padding: 4vw 2.5vw;
+    margin: 20px 10px;
+    height: 350px;
+}
+
+#section-b .box-container .box img {
+    width: 100px;
+    margin-bottom: 5vh;
+}
+
+#section-b .box-container .box h4 {
+    font-weight: bold;
+    font-size: 130%;
+}
+
+#section-c {
+    background-color:lightblue;
+} 
+
+#section-d {
+    background-color:lightgreen;
+}
+
+#footer {
+    height: 25vh;
+    background-color: #111;
+    color: #fff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 520px){
+    .nav-container {
+        padding: 12.5px 20px;
+    }
+
+    .nav-link-container {
+        display: none;
+    }
+
+    .nav-logo {
+        width: 100px;
+        transform: translateY(0);
+    }
+
+    .nav-hamburger{
+        width: 35px;
+        float: right;
+        display: inline;
+    }    
+
+    #section-a {
+        margin-top: 50px;
+        padding: 50px 0;
+    }
+
+    #section-a  img {
+        margin-top: 20px;
+    }
+
+    #section-a .description {
+        padding: 20px 0;
+    }
+
+    #section-a .section-a-content {
+        padding: 0;
+    }
+
+    #section-a .section-a-content img {
+        width: 100%;
+    }
+
+    #section-a .section-a-content h2 {
+        font-size: 28px;
+        margin: 25px;
+    }
+
+    #section-a button {
+        margin: 0 25px;
+
+    }
+
+    #section-b .box-container .box {
+        width: 90%;
+        margin: 20px;
+        height: auto;
+        padding: 50px;
+    }
+    
+    #section-b .box-container .box img {
+        margin-top: 30px;
+    }
+
+}
+
+
