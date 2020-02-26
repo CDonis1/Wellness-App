@@ -2,6 +2,11 @@ h1 {
   font-family: "Montserrat Alternates";
   text-align: left;
 }
+h2 {
+  font-family: "Montserrat Alternates";
+  text-align: left;
+}
+
 p {
   font-family: "Montserrat Alternates";
   font-size: 120%;
@@ -26,6 +31,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
+    font-family: "Montserrat Alternates";
   }
 }
 
