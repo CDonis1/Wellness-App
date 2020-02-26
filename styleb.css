@@ -38,3 +38,16 @@ p {
 .header3 {
   text-align: middle;
 }
+
+.foodpic {
+  text-align: center;
+}
+.internal {
+  text-align: left;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
